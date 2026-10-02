@@ -16,9 +16,10 @@ def calculo():
 
         if imc <=17.30:
             faixa = 'Abaixo do Peso'
-        elif imc < 27.86 and imc > 17.30:
+        elif imc <= 25:
             faixa = 'Peso normal'
-        elif imc < 34.60 and imc > 27.86:
+        
+        elif imc < 34.60:
             faixa = 'Sobre Peso'
         else:
             faixa = 'Obesidade'
