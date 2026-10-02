@@ -3,9 +3,9 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
 def calculo():
-    nome = 'Seu nome'
-    imc = 'Seu imc'
-    faixa = 'Sua faixa'
+    nome = None
+    imc = None
+    faixa = None
 
     if request.method == 'POST':
         nome = request.form.get('nome')
